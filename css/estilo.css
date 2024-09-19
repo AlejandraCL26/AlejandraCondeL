@@ -1,0 +1,66 @@
+.contenedor
+{
+    background-color: darksalmon;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr ;
+    grid-template-areas:" header   header   header"
+                        " nav       nav       nav"
+                        " section  section2    ads"
+                        " foot     foot      foot" 
+                        " rrss1     rrss2      rrss3";
+}
+.contenedor .header
+{
+    background-color: darkorchid;
+    grid-column: header;
+}
+.contenedor .nav
+{
+    background-color: rgb(131, 131, 245);
+    grid-column: nav;
+}
+.contenedor .section
+{
+    background-color: bisque;
+    grid-column: section;
+}
+.contenedor .section2
+{
+    background-color: rgb(245, 181, 102);
+    grid-column: section2;
+}
+.contenedor .ads
+{
+    background-color: rgb(243, 137, 243);
+    grid-column: ads;
+}
+.ads .hijoads
+{
+    background-color: aqua;
+    height: 70%;
+}
+.contenedor .foot
+{
+    background-color: darkorange;
+    grid-column: foot;
+}
+.contenedor .rrss1
+{
+    background-color: rgb(126, 126, 243);
+    grid-column: rrss1;
+}
+.contenedor .rrss2
+{
+    background-color: darkseagreen;
+    grid-column: rrss2;
+}
+.contenedor .rrss3
+{
+    background-color: rgb(224, 44, 44);
+    grid-column: rrss3;
+}
